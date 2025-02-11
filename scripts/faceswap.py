@@ -35,7 +35,7 @@ class FaceSwapScript(scripts.Script):
     def ui(self, is_img2img):
         with gr.Accordion(f"roop {version_flag}", open=False):
             with gr.Column():
-                img = gr.inputs.Image(type="pil")
+                img = gr.components.Image(type="pil")
                 enable = gr.Checkbox(False, placeholder="enable", label="Enable")
                 faces_index = gr.Textbox(
                     value="0",
